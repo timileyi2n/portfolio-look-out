@@ -1,0 +1,125 @@
+:root {
+    --bg-color: black;
+    --second-bg-color: #13131313;
+    --text-color: #ffff;
+    --main-color: #00ffee;
+}
+
+#Contact{
+    height: 100vh;
+    background-color: var(--bg-color);
+    width: 100%;
+}
+
+#Contact h1{
+    font-size:8rem ;
+    text-align: center;
+}
+#Contact h1 span{
+    color: var(--main-color);
+    text-shadow: 0 0 5px var(--main-color);
+
+}
+.contact-flex{
+    display: flex;
+    justify-content: center;
+}
+.contact-flexs{
+    display: flex;
+    flex-direction: column;
+}
+.input{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  
+}
+.flex-input{
+    width: 40rem;
+    height: 5rem;
+    border: 3px solid var(--main-color);
+    background-color: var(--second-bg-color);
+    border-radius: 20px;
+    color: var(--text-color);
+    margin: 8px 16px;
+    padding: 0 8px;
+}
+.contact-flexed{
+    display: flex;
+    flex-direction: column;
+  position: relative;
+}
+
+.inputs{
+    margin:8px 0;
+    width: 38rem;
+    height: 18rem;
+    padding: 10px 20px;
+    position: relative;
+    bottom: 2rem;
+    border: 2px solid var(--main-color);
+    border-radius: 20px;
+    background-color: var(--second-bg-color);
+    color: var(--text-color);
+    resize: none;
+}
+.contact-flexed button{
+    position: absolute;
+    bottom:-20px;
+    right: 150px;
+    color: var(--bg-color);
+    font-weight: 700;
+    background-color: var(--main-color);
+    border-radius:  20px;
+    padding: 10px 20px; 
+    font-size: 12px;
+    transition: 2s ease;
+    cursor: pointer;
+}
+.contact-flexed button:hover{
+    transition: 1s ease;
+    box-shadow: 0  0 25px var(--main-color);
+    
+}
+@media only screen and (max-width:950px){
+    .contact-flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+    .flex-input{
+        width: 30rem;
+    }
+    .contact-flexed a{
+        position: absolute;
+        bottom: -5rem;
+        right: 150px;
+        color: var(--bg-color);
+        font-weight: 700;
+        background-color: var(--main-color);
+        border-radius:  20px;
+        padding: 10px 20px; 
+        font-size: 12px;
+        transition: 2s ease;
+    }
+    #Contact h1{
+        font-size:6rem ;
+        text-align: center;
+        margin-top: 10rem;
+    }
+    .inputs{
+        margin:8px 0;
+        width: 30rem;
+        height: 18rem;
+        padding: 10px 20px;
+        position: relative;
+       bottom: 0%;
+       
+    }
+    .contact-flexed button{
+        right: 98px;
+        bottom: -5rem;
+    }
+}
